@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://static.readdy.ai/static/e.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProHealth - Move Better, Feel Better</title>
+    
+    <!-- External Libraries -->
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: ' #44a4da',
+                        secondary: ' #78c93e'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+        
+        .btn-custom {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
+        }
+        
+        .hero-bg {
+            background-image: url('https://i.ibb.co.com/nNq1Tt5x/home-1-2.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header Section -->
+    <header class="w-full bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <a href="#" class="flex items-center gap-2">
+                        <img src="https://i.ibb.co.com/1trCpdJ5/Screenshot-2025-10-16-at-8-56-31-AM-Copy-Copy-1-1.png" 
+                             alt="ProHealth Logo" 
+                             class="h-12 w-auto">
+                    </a>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary font-medium transition-colors">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary font-medium transition-colors">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary font-medium transition-colors">Services</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
+                </nav>
+                
+                <!-- CTA Button -->
+                <button class="bg-primary text-white px-6 py-3 !rounded-button font-semibold btn-custom whitespace-nowrap">
+                    Book Now
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center relative">
+        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-transparent"></div>
+        
+        <div class="w-full relative z-10">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="max-w-2xl mt-20">
+                    <h1 class="text-6xl font-bold mb-6 leading-tight">
+                        <span class="text-primary">Move Better,</span><br>
+                        <span class="text-secondary">Feel Better</span>
+                    </h1>
+                    
+                    <p class="text-xl text-white font-semibold mb-8 leading-relaxed">
+                        Take care of your health with modern medical services and physiotherapy. 
+                        Start a healthy lifestyle with our experienced doctors and therapists.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 mt-8">
+                        <button class="bg-primary text-white px-8 py-4 !rounded-button font-semibold text-lg btn-custom whitespace-nowrap">
+                            Book Appointment
+                        </button>
+                        <button class="border-2 border-primary text-primary px-8 py-4 !rounded-button font-semibold text-lg hover:bg-primary hover:text-white transition-all whitespace-nowrap">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic Gallery Section -->
+    <section id="abput" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Clinic</h2>
+                <p class="text-xl text-gray-600">Modern facilities and comfortable environment</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Clinic Room 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="https://readdy.ai/api/search-image?query=modern%20physiotherapy%20treatment%20room%20with%20exercise%20equipment%2C%20clean%20white%20interior%2C%20professional%20medical%20equipment%2C%20natural%20lighting%2C%20comfortable%20patient%20area&width=400&height=300&seq=clinic001&orientation=landscape"
+                         alt="Physiotherapy Room" 
+                         class="w-full h-64 object-cover object-top">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Physiotherapy Room</h3>
+                        <p class="text-gray-600">Fully equipped treatment room with modern equipment</p>
+                    </div>
+                </div>
+                
+                <!-- Clinic Room 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="https://readdy.ai/api/search-image?query=comfortable%20medical%20consultation%20room%20with%20doctor%20desk%2C%20patient%20chairs%2C%20medical%20certificates%20on%20wall%2C%20professional%20healthcare%20environment%2C%20soft%20lighting&width=400&height=300&seq=clinic002&orientation=landscape"
+                         alt="Consultation Room" 
+                         class="w-full h-64 object-cover object-top">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Consultation Room</h3>
+                        <p class="text-gray-600">Comfortable and private environment for personal consultation</p>
+                    </div>
+                </div>
+                
+                <!-- Clinic Room 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="https://readdy.ai/api/search-image?query=modern%20medical%20clinic%20waiting%20area%20with%20comfortable%20seating%2C%20plants%2C%20natural%20light%2C%20clean%20white%20interior%2C%20peaceful%20atmosphere%20for%20patients&width=400&height=300&seq=clinic003&orientation=landscape"
+                         alt="Waiting Area" 
+                         class="w-full h-64 object-cover object-top">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Waiting Area</h3>
+                        <p class="text-gray-600">Comfortable and peaceful waiting space for patients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600">Specialized medical services and therapy</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 flex items-center justify-center bg-secondary/10 text-secondary rounded-xl mb-6">
+                        <i class="ri-heart-pulse-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Physiotherapy</h3>
+                    <p class="text-gray-600 mb-6">Specialized physiotherapy treatment for muscle and bone problems. Modern methods for pain relief and improved mobility.</p>
+                    <button class="bg-primary text-white px-6 py-3 !rounded-button font-semibold btn-custom w-full whitespace-nowrap">
+                        Book Appointment
+                    </button>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 flex items-center justify-center bg-secondary/10 text-secondary rounded-xl mb-6">
+                        <i class="ri-stethoscope-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">General Medicine</h3>
+                    <p class="text-gray-600 mb-6">Expert doctors' consultation for daily health problems. Regular health check-ups and diagnosis.</p>
+                    <button class="bg-primary text-white px-6 py-3 !rounded-button font-semibold btn-custom w-full whitespace-nowrap">
+                        Book Appointment
+                    </button>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary/10 text-secondary rounded-xl mb-6">
+                        <i class="ri-run-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Sports Therapy</h3>
+                    <p class="text-gray-600 mb-6">Specialized medical services for athletes. Effective therapy for injury prevention and quick recovery.</p>
+                    <button class="bg-primary text-white px-6 py-3 !rounded-button font-semibold btn-custom w-full whitespace-nowrap">
+                        Book Appointment
+                    </button>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 flex items-center justify-center bg-secondary/10 text-secondary rounded-xl mb-6">
+                        <i class="ri-wheelchair-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Rehabilitation Services</h3>
+                    <p class="text-gray-600 mb-6">Special rehabilitation programs for complete recovery after accidents or surgery.</p>
+                    <button class="bg-primary text-white px-6 py-3 !rounded-button font-semibold btn-custom w-full whitespace-nowrap">
+                        Book Appointment
+                    </button>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary/10 text-secondary rounded-xl mb-6">
+                        <i class="ri-massage-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Massage Therapy</h3>
+                    <p class="text-gray-600 mb-6">Therapeutic massage to reduce muscle tension and stress. For mental peace and physical wellness.</p>
+                    <button class="bg-primary text-white px-6 py-3 !rounded-button font-semibold btn-custom w-full whitespace-nowrap">
+                        Book Appointment
+                    </button>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 flex items-center justify-center bg-secondary/10 text-secondary rounded-xl mb-6">
+                        <i class="ri-mental-health-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Pain Management</h3>
+                    <p class="text-gray-600 mb-6">Specialist treatment for chronic pain. Modern methods for pain control without medication.</p>
+                    <button class="bg-primary text-white px-6 py-3 !rounded-button font-semibold btn-custom w-full whitespace-nowrap">
+                        Book Appointment
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Patient Testimonials</h2>
+                <p class="text-xl text-gray-600">What our patients say about our services</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I got relief from long-term back pain. The behavior of doctors and therapists is excellent. I would recommend everyone to take the services of this clinic."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                            <i class="ri-user-line text-secondary"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Sarah Johnson</h4>
+                            <p class="text-gray-500 text-sm">Teacher</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I injured my knee while playing football. With their sports therapy, I was able to return to the field again. Excellent medical service."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mr-4">
+                            <i class="ri-user-line text-secondary"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Michael Rodriguez</h4>
+                            <p class="text-gray-500 text-sm">Football Player</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I had neck and shoulder pain due to office work pressure. I got a lot of relief with their massage therapy. The clinic environment is very peaceful."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                            <i class="ri-user-line text-secondary"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Emily Chen</h4>
+                            <p class="text-gray-500 text-sm">Bank Officer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Team</h2>
+                <p class="text-xl text-gray-600">Meet our experienced doctors and therapists</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="text-center">
+                    <div class="w-48 h-48 mx-auto mb-6 rounded-xl overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=professional%20bangladeshi%20male%20doctor%20in%20white%20coat%2C%20friendly%20smile%2C%20medical%20stethoscope%2C%20clean%20medical%20background%2C%20confident%20pose%2C%20healthcare%20professional%20portrait&width=300&height=300&seq=doctor001&orientation=squarish"
+                             alt="Dr. David Thompson" 
+                             class="w-full h-full object-cover object-top">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Dr. David Thompson</h3>
+                    <p class="text-primary font-medium mb-2">Chief Medical Officer</p>
+                    <p class="text-gray-600 text-sm">MBBS, MD (Orthopedics)<br>15 years experience</p>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="text-center">
+                    <div class="w-48 h-48 mx-auto mb-6 rounded-xl overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=professional%20bangladeshi%20female%20physiotherapist%20in%20medical%20uniform%2C%20warm%20smile%2C%20rehabilitation%20equipment%20background%2C%20healthcare%20professional%2C%20confident%20appearance&width=300&height=300&seq=therapist001&orientation=squarish"
+                             alt="Lisa Martinez" 
+                             class="w-full h-full object-cover object-top">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Lisa Martinez</h3>
+                    <p class="text-secondary font-medium mb-2">Senior Physiotherapist</p>
+                    <p class="text-gray-600 text-sm">BPT, MPT<br>10 years experience</p>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="text-center">
+                    <div class="w-48 h-48 mx-auto mb-6 rounded-xl overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=professional%20bangladeshi%20male%20sports%20therapist%20in%20medical%20attire%2C%20athletic%20background%2C%20sports%20medicine%20equipment%2C%20confident%20healthcare%20professional%20portrait&width=300&height=300&seq=therapist002&orientation=squarish"
+                             alt="James Wilson" 
+                             class="w-full h-full object-cover object-top">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">James Wilson</h3>
+                    <p class="text-primary font-medium mb-2">Sports Therapist</p>
+                    <p class="text-gray-600 text-sm">BSc (Sports Science)<br>8 years experience</p>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="text-center">
+                    <div class="w-48 h-48 mx-auto mb-6 rounded-xl overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=professional%20bangladeshi%20female%20massage%20therapist%20in%20medical%20uniform%2C%20peaceful%20spa%20environment%2C%20wellness%20therapy%20background%2C%20caring%20healthcare%20professional&width=300&height=300&seq=therapist003&orientation=squarish"
+                             alt="Anna Davis" 
+                             class="w-full h-full object-cover object-top">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Anna Davis</h3>
+                    <p class="text-secondary font-medium mb-2">Massage Therapist</p>
+                    <p class="text-gray-600 text-sm">Certified Massage Therapist<br>6 years experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog/Wellness Tips Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Health Tips</h2>
+                <p class="text-xl text-gray-600">Important advice for staying healthy</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="https://readdy.ai/api/search-image?query=person%20doing%20morning%20exercise%20outdoors%2C%20healthy%20lifestyle%2C%20stretching%20routine%2C%20sunrise%20background%2C%20fitness%20wellness%2C%20natural%20environment&width=400&height=250&seq=blog001&orientation=landscape"
+                         alt="Daily Exercise" 
+                         class="w-full h-48 object-cover object-top">
+                    <div class="p-6">
+                        <span class="text-primary text-sm font-medium">Health Tips</span>
+                        <h3 class="text-xl font-semibold text-gray-900 mt-2 mb-3">Importance of Daily Exercise</h3>
+                        <p class="text-gray-600 mb-4">How regular exercise improves your physical and mental health and helps prevent diseases.</p>
+                        <a href="#" class="text-primary font-medium hover:underline">Read More</a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 2 -->
+                <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="https://readdy.ai/api/search-image?query=office%20worker%20with%20proper%20posture%20at%20desk%2C%20ergonomic%20workspace%2C%20healthy%20sitting%20position%2C%20computer%20work%2C%20spine%20alignment%20demonstration&width=400&height=250&seq=blog002&orientation=landscape"
+                         alt="Proper Sitting Posture" 
+                         class="w-full h-48 object-cover object-top">
+                    <div class="p-6">
+                        <span class="text-secondary text-sm font-medium">Workplace</span>
+                        <h3 class="text-xl font-semibold text-gray-900 mt-2 mb-3">Proper Sitting Posture at Office</h3>
+                        <p class="text-gray-600 mb-4">How to maintain proper posture and avoid pain while working at a desk for long hours.</p>
+                        <a href="#" class="text-primary font-medium hover:underline">Read More</a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 3 -->
+                <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="https://readdy.ai/api/search-image?query=healthy%20balanced%20meal%20with%20fruits%20vegetables%20proteins%2C%20nutritious%20food%20arrangement%2C%20wellness%20nutrition%2C%20colorful%20healthy%20diet&width=400&height=250&seq=blog003&orientation=landscape"
+                         alt="Balanced Diet" 
+                         class="w-full h-48 object-cover object-top">
+                    <div class="p-6">
+                        <span class="text-primary text-sm font-medium">Nutrition</span>
+                        <h3 class="text-xl font-semibold text-gray-900 mt-2 mb-3">Balanced Diet Rules</h3>
+                        <p class="text-gray-600 mb-4">Learn about essential nutrients for bone and muscle health and proper dietary habits.</p>
+                        <a href="#" class="text-primary font-medium hover:underline">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <h2 class="text-4xl font-bold text-white mb-6">Start Taking Care of Your Health Today</h2>
+            <p class="text-xl text-green-100 mb-8">Consult with our experienced doctors and therapists and move towards a healthy life.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-primary px-8 py-4 !rounded-button font-semibold text-lg hover:bg-gray-100 transition-colors whitespace-nowrap">
+                    Book Appointment
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 !rounded-button font-semibold text-lg hover:bg-white hover:text-primary transition-all whitespace-nowrap">
+                    Call Us
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <a href="#" class="flex items-center gap-2">
+                            <img src="https://i.ibb.co.com/1trCpdJ5/Screenshot-2025-10-16-at-8-56-31-AM-Copy-Copy-1-1.png" 
+                                 alt="ProHealth Logo" 
+                                 class="h-16 w-auto">
+                        </a>
+                    </div>
+                    <p class="text-gray-400 mb-6">Take care of your health with modern medical services and physiotherapy.</p>
+                    <div class="flex space-x-4">
+                        <div class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-primary transition-colors cursor-pointer">
+                            <i class="ri-facebook-fill"></i>
+                        </div>
+                        <div class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-primary transition-colors cursor-pointer">
+                            <i class="ri-twitter-fill"></i>
+                        </div>
+                        <div class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-primary transition-colors cursor-pointer">
+                            <i class="ri-instagram-line"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">Our Team</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Physiotherapy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">General Medicine</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Sports Therapy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Rehabilitation Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Pain Management</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Information</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 flex items-center justify-center text-primary mt-1">
+                                <i class="ri-map-pin-line"></i>
+                            </div>
+                            <p class="text-gray-400">123 Health Street, Downtown, New York - 10001</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                <i class="ri-phone-line"></i>
+                            </div>
+                            <p class="text-gray-400">+1 (555) 123-4567</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                <i class="ri-mail-line"></i>
+                            </div>
+                            <p class="text-gray-400">info@prohealth.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 ProHealth. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script id="mobile-menu-toggle">
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('[data-mobile-menu-button]');
+            const mobileMenu = document.querySelector('[data-mobile-menu]');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+    
+    <script id="smooth-scroll">
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    
+    <script id="cta-buttons">
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctaButtons = document.querySelectorAll('button');
+            ctaButtons.forEach(button => {
+                if (button.textContent.includes('Book') || button.textContent.includes('Appointment')) {
+                    button.addEventListener('click', function() {
+                        alert('Appointment booking system will be available soon. Please call us at: +1 (555) 123-4567');
+                    });
+                }
+            });
+        });
+    </script>
+    
+    <script>
+        !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t ||
